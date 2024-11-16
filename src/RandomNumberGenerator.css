@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;500;700&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.container {
+  background: linear-gradient(135deg, #ffffff, #f3f3f3);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  width: 350px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.generate-btn {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(255, 87, 136, 0.4); 
+}
+
+.generate-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 87, 136, 0.6);
+}
+
+.generate-btn:active {
+  transform: scale(0.95); 
+}
+
+
+.number-display {
+  margin-top: 1.8rem;
+  font-size: 1.4rem;
+  color: #2c3e50; 
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #134ca7, #5192b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: popIn 0.5s ease-out;
+}
+
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
